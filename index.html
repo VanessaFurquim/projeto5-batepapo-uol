@@ -4,123 +4,29 @@
 
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"/>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Projeto - DrivenEats</title>
+    <title>Projeto - Bate papo OUL</title>
     
   </head>
 
   <body>
     <header>
-      <img src="https://static1.purebreak.com.br/articles/6/92/41/6/@/355678-relembre-os-sites-que-faziam-sucesso-na-diapo-1.jpg">DrivenEats</h1>
-      <h3>Sua comida em 6 minutos </h3>
+      <img src="https://www.zigg.com.br/media/cache/3c/33/3c3316842b2107cb273c2541e038eccb.jpg" alt="Logo Bate Papo OUL">
+      <ion-icon name="people"></ion-icon>
     </header>
 
-    <main>
-      <h2 class="dish-headline">Primeiro, seu prato</h2>
-      <section class="dish category" data-identifier="dishes">
-        <div class="option dish1" onclick="selectDish ('dish1')" data-identifier="food-option">
-          <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_600,q_75,w_800/v1/clients/springfield/c446ed1b_4322_4856_8cd8_8de9d6d3072e_Kai_Ramen_2b414d6c-1a81-4beb-b5d8-79756a14add1.jpg">
-          <h4 data-identifier="food-title">misô lamen</h4>
-          <h5>Lamen macio e manteigado com molho misô.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 19,90</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option dish2" onclick="selectDish ('dish2')" data-identifier="food-option">
-          <img src="https://images.mygoodtimes.in/wp-content/uploads/2019/01/02121805/spaghetti-tomato-mozz-e1577967526989.jpg">
-          <h4 data-identifier="food-title">Espagueti ao sugo</h4>
-          <h5>Se você ainda quiser macarrão, mas com outro molho.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 15,00</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option dish3" onclick="selectDish ('dish3')" data-identifier="food-option">
-          <img src="https://i.pinimg.com/736x/e7/c6/5e/e7c65ee75c4093957d159c408e535f71.jpg">
-          <h4 data-identifier="food-title">Queijo quente e sopa</h4>
-          <h5>Nada melhor para curar a tristeza.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 23,80</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-      </section>
-
-      <h2 class="drink-headline">Agora, sua bebida</h2>
-      <section class="drink category"data-identifier="drinks">
-        <div class="option drink1" onclick="selectDrink ('drink1')" data-identifier="food-option">
-          <img src="https://www.guiadoscuriosos.com.br/wp-content/uploads/2011/03/1-6.jpg">
-          <h4 data-identifier="food-title">Milkshake</h4>
-          <h5>Sorvete, mas para beber. Clássico para os tristonhos.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 10,00</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option drink2" onclick="selectDrink ('drink2')" data-identifier="food-option">
-          <img src="https://cocinarrecetasdepostres.net/po/wp-content/uploads/2020/06/1593205807_821_Cha-Chai-com-receita-de-Bourbon-Chai-cravado.jpg">
-          <h4 data-identifier="food-title">Chai</h4>
-          <h5>Uma bebida quentinha para aquecer o coração.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 6,90</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option drink3" onclick="selectDrink ('drink3')" data-identifier="food-option">
-          <img src="https://www.barbizmag.com/wp-content/uploads/2018/07/AvionSunset.jpg">
-          <h4 data-identifier="food-title">Tequila Sunset</h4>
-          <h5>Sunset, não sunrise. Se você precisa de algo mais forte.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 12,50</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-      </section>
-
-      <h2 class="dessert-headline">Por fim, sua sobremesa</h2>
-      <section class="dessert category"data-identifier="desserts">
-        <div class="option dessert1" onclick="selectDessert ('dessert1')" data-identifier="food-option">
-          <img src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2018/10/crumble-768x960.jpg">
-          <h4 data-identifier="food-title">Crumble de frutas vermelhas</h4>
-          <h5>Azedinho e docinho ao mesmo tempo.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 14,90</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option dessert2" onclick="selectDessert ('dessert2')" data-identifier="food-option">
-          <img src="https://i0.wp.com/www.perfetto.com.br/imagens/2016/03/shutterstock_98729189.jpg?fit=800%2C534&ssl=1">
-          <h4 data-identifier="food-title">Petit Gateau</h4>
-          <h5>Qualquer coração pode ser curado com chocolate.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 17,50</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-        <div class="option dessert3" onclick="selectDessert ('dessert3')" data-identifier="food-option">
-          <img src="https://folhadomate.com/wp-content/uploads/2015/08/30259-renata_monteiro_profiterole_morango_chocolate_3.jpg">
-          <h4 data-identifier="food-title">Profiteroles</h4>
-          <h5>Quando você sabe que um só não vai ser suficiente.</h5>
-          <div class="checkmark-position">
-            <h6 data-identifier="food-price">R$ 25,00</h6>
-            <ion-icon name="checkmark-circle"></ion-icon>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="order-button">
-      <button class="button-shape" onclick="whatsappMessage()" disabled>
-        <h3>Selecione os 3 itens</br>para fechar o pedido</h3>
-      </button>
+    <footer>
+    <input type="text" placeholder="Escreva aqui..." />
+    <button data-identifier="send-message">
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </button>
     </footer>
 
     <script src="script.js"></script>
