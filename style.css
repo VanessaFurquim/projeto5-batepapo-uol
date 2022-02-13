@@ -39,7 +39,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 587px;
+    bottom: 0;
 }
 
 ::placeholder {
@@ -51,4 +51,31 @@ footer {
 
 footer ion-icon {
     font-size: 30px;
+}
+
+.single-message{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.status{
+    background: #DCDCDC;
+
+}
+
+.message{
+    background: #ffffff;
+}
+
+.private-message{
+    background: #FFDEDE;
+}
+
+
+.sent-time{
+    color:#AAAAAA;
+    font-size: 13px;
 }
