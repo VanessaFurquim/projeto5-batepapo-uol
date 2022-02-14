@@ -29,6 +29,16 @@ header ion-icon {
     font-size: 40px;
 }
 
+main {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+  }
+
 footer {
     width: 100%;
     height: 80px;
@@ -42,11 +52,15 @@ footer {
     bottom: 0;
 }
 
-::placeholder {
+footer::placeholder {
     font-style: italic;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+}
+
+input {
+    border: none;
 }
 
 footer ion-icon {
@@ -54,7 +68,6 @@ footer ion-icon {
 }
 
 .single-message{
-    width: 100%;
     padding: 10px;
     margin-bottom: 4px;
     display: flex;
@@ -63,7 +76,6 @@ footer ion-icon {
 
 .status{
     background: #DCDCDC;
-
 }
 
 .message{
