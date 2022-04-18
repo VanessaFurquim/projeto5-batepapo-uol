@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+  <html lang = "pt-br">
+    <head>
 
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel = "stylesheet" href = "reset.css"/>
+      <link rel = "stylesheet" href = "style.css"/>
+      <link rel = "preconnect" href = "https://fonts.googleapis.com">
+      <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+      <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
 
-    <title>Projeto - Bate papo OUL</title>
-    
-  </head>
+      <title>Projeto - Bate papo OUL</title>
+      
+    </head>
 
-  <body>
-    <header>
-      <img src="https://www.zigg.com.br/media/cache/3c/33/3c3316842b2107cb273c2541e038eccb.jpg" alt="Logo Bate Papo OUL">
-      <ion-icon name="people"></ion-icon>
-    </header>
+    <body>
+      <header>
+        <img src = "https://www.zigg.com.br/media/cache/3c/33/3c3316842b2107cb273c2541e038eccb.jpg" alt = "Logo Bate Papo OUL">
+        <ion-icon name = "people"></ion-icon>
+      </header>
 
-    <main class="chat-container"></main>
+      <main class = "chat-container">
 
-    <footer>
-    <input class="user-message" type="text" placeholder="Escreva aqui..."/>
-    <button data-identifier="send-message" onclick="sendMessages()">
-      <ion-icon name="paper-plane-outline"></ion-icon>
-    </button>
-    </footer>
+        <div class = "initial-screen">
+          <img src = "https://www.zigg.com.br/media/cache/3c/33/3c3316842b2107cb273c2541e038eccb.jpg" alt = "Logo Bate Papo OUL">
+          <input class = "enter-user-name" placeholder = "Digite seu nome"/>
+          <button class = "initial-screen-button">Entrar</button>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  </body>
-</html>
+      </main>
+
+      <footer>
+        <input class = "user-message" id = "activate-enter-key" type = "text" placeholder = "Escreva aqui..."/>
+        <button id = "send-message-with-enter-key" onclick = "sendMessages()">
+          <ion-icon name = "paper-plane-outline"></ion-icon>
+        </button>
+      </footer>
+
+      <script src = "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src = "script.js"></script>
+      <script src = "https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
+  </html>
